@@ -1,1 +1,63 @@
 // TODO
+.container {
+  display: flex;
+  align-items: center;
+  max-width: 780px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.posts {
+  a {
+    display: block;
+    & + a {
+      margin-top: 3rem;
+    }
+
+    &:hover strong {
+      color: var(--highlight);
+    }
+  }
+
+  strong {
+    font-size: 1.75rem;
+    color: var(--heading);
+    transition: color .2s;
+  }
+
+  p {
+    font-size: 1.125rem;
+    margin-top: 0.5rem;
+  }
+
+  .infos {
+    display: flex;
+    align-items: center;
+    color: var(--info);
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
+
+    time, span {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+  }
+}
+
+.footerContainer {
+  max-width: 780px;
+  width: 100%;
+  margin: 4rem auto 5rem;
+  padding: 0 2rem;
+
+  button {
+    color: var(--highlight);
+    background-color: transparent;
+    border: none;
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+}
