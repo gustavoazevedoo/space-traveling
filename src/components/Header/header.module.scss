@@ -5,6 +5,10 @@
   // align-items: center;
   max-width: 780px;
   width: 100%;
-  margin: 5rem auto 4rem;
+  margin: 2.5rem auto;
   padding: 0 2rem;
+
+  img {
+    cursor: pointer;
+  }
 }
